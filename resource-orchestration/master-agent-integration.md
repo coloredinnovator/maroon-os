@@ -1,25 +1,25 @@
 # Master Agent Integration
 
 ## Summary
-The brainstem of the Maroon OS. Ties Kiro, Claude Opus, offline agents, free-tier harvesting, Terraform, BigQuery, OSINT, and infrastructure into one unified system.
+The architectural definition of the Master Agent, the executive intelligence layer of the Maroon OS.
 
 ## Purpose
-The master agent is the executive intelligence layer. It reads all system data, supervises all agents, delegates tasks, and manages free tiers, credits, resources, Terraform, BigQuery, OSINT, Kiro, and Claude Opus.
+To supervise all agents, delegate tasks, manage clouds/credits, and serve as the brainstem of the ecosystem.
 
 ## Core Responsibilities
-1. **Workload Routing**: Decides which cloud, agent, and model to use.
-2. **Agent Supervision**: Monitors all offline and specialty agents.
-3. **Kiro Orchestration**: Uses Kiro for planning, decomposition.
-4. **Claude Opus Oversight**: Uses Claude for architecture and reasoning.
-5. **Terraform Control**: Deploys infra, detects drift.
-6. **BigQuery Intelligence**: Reads OSINT, logs, metrics.
-7. **Free-Tier Optimization**: Ensures zero waste.
-8. **Credit Allocation**: Decides when to burn credits.
-9. **Security Oversight**: Supervises attack-simulation.
-10. **OSINT Integration**: Routes external signals to BQ.
+1. Workload Routing
+2. Agent Supervision
+3. Kiro Orchestration
+4. Claude Opus Oversight
+5. Terraform Control
+6. BigQuery Intelligence
+7. Free-Tier Optimization
+8. Credit Allocation
+9. Security Oversight
+10. OSINT Integration
 
 ## Architecture
-```text
+```
                    ┌──────────────────────────┐
                    │      Claude Opus         │
                    │  (Executive Reasoning)   │
@@ -47,3 +47,13 @@ The master agent is the executive intelligence layer. It reads all system data, 
 │ Free Tiers    │       │ Cloud Providers│       │ OSINT + Data   │
 └──────────────┘       └────────────────┘       └────────────────┘
 ```
+
+## Agent Interactions
+- **Kiro**: Strategic planner. Decomposes tasks for the Master Agent to assign.
+- **Claude Opus**: Chief architect. Provides reviews, data modeling, and safety checks.
+
+## Control Systems
+- **Terraform**: The infra spine. Validated, deployed, and destroyed by the Master Agent.
+- **BigQuery**: The memory warehouse. Master Agent reads state, intelligence, and metrics from here.
+- **Free Tiers**: Master Agent orchestrates workloads to maximize $0 compute usage.
+- **OSINT & Security**: Constantly feeds external signals and internal vulnerability reports to update system strategies.\n

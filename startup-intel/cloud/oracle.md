@@ -1,4 +1,4 @@
-# Oracle for Startups
+# Oracle Provider
 
 ## Why Oracle is Core
 Oracle is your enterprise-grade compute backbone.
@@ -9,9 +9,9 @@ Oracle is your enterprise-grade compute backbone.
 - 10 GB object storage
 
 ## Startup Credits
-$500 → $10k → enterprise intros
+$500 -> $10k -> enterprise intros
 
 ## What Goes Here
 - Heavy compute
 - Batch inference
-- Large dataset processing
+- Large dataset processing\n

@@ -1,7 +1,7 @@
-# AWS
+# AWS Provider
 
 ## Why AWS is Core
-AWS is your security + enterprise backbone. IAM, Lambda, DynamoDB, and Activate credits make it ideal for Attack-simulation agents, Security layer, Multi-cloud routing, and Event-driven workloads.
+AWS is your security + enterprise backbone. IAM, Lambda, DynamoDB, and Activate credits make it ideal for attack-simulation and multi-cloud routing.
 
 ## Key Free Tiers
 - Lambda: 1M requests
@@ -10,9 +10,9 @@ AWS is your security + enterprise backbone. IAM, Lambda, DynamoDB, and Activate 
 - API Gateway: 1M calls
 
 ## Startup Credits
-$1k → $5k → $25k → $100k
+$1k -> $5k -> $25k -> $100k
 
 ## What Goes Here
 - Security simulation engine
 - IAM-driven agent isolation
-- Multi-cloud routing layer
+- Multi-cloud routing layer\n

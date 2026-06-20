@@ -1,20 +1,33 @@
 # Offline Agent Workflows
 
 ## Summary
-Definitions of the agents that run 24/7 harvesting free compute, feeding BigQuery, and improving skills.
+Definitions of the offline autonomous agents that harvest compute, feed BigQuery, and improve the system.
 
 ## Purpose
-These agents are autonomous, scheduled, free-tier powered, non-interactive, Kiro-supervised, BigQuery-connected, and Terraform-aware.
+To run 24/7 background tasks utilizing free compute without human input.
+
+## Characteristics
+- Autonomous
+- Scheduled
+- Free-tier powered
+- Non-interactive
+- Task-oriented
+- Kiro-supervised
+- BigQuery-connected
+- Terraform-aware
 
 ## The 8 Classes of Offline Agents
-1. **OSINT Agents**: Crawl the web, scrape public data, track cloud pricing.
-2. **Embedding Agents**: Generate embeddings, build semantic indexes on HF free GPUs.
-3. **Batch Inference Agents**: Run inference jobs and model distillation.
-4. **Security Scan Agents**: Attack infra, simulate DDoS, look for misconfigurations.
-5. **Terraform Agents**: Validate plans, detect drift, deploy free-tier infra.
-6. **BigQuery Ingestion Agents**: Pull logs, normalize data, load to BQ.
-7. **Browser Agents (Forked Chrome)**: Headless browsing, DOM extraction.
-8. **IDE Agents (Custom IDE)**: Analyze code, generate docs.
+1. **OSINT Agents**: Crawl web, scrape data, monitor repos and pricing. Feed BigQuery.
+2. **Embedding Agents**: Generate embeddings, store vectors, build semantic indexes on HF free GPUs.
+3. **Batch Inference Agents**: Run inference jobs, distill models using Cloud Run/HF Spaces.
+4. **Security Scan Agents**: Attack own infra, test APIs, look for misconfigurations.
+5. **Terraform Agents**: Validate plans, detect drift, enforce IAM, deploy free-tier infra.
+6. **BigQuery Ingestion Agents**: Pull logs, metrics, OSINT, and load into BigQuery.
+7. **Browser Agents (Forked Chrome)**: Run headless Chrome, capture screenshots, extract DOM.
+8. **IDE Agents (Custom IDE)**: Analyze code, suggest improvements, feed skills engine.
 
 ## Kiro Integration
-Kiro acts as the "local brain" for offline agents. Kiro plans, decomposes tasks, corrects errors, and selects skills. Offline Agents → Kiro → Master Agent.
+Kiro is the reasoning layer for all offline agents. It provides planning, decomposition, and supervision. Kiro sits between Offline Agents and the Master Agent.
+
+## BigQuery & Terraform Integration
+All agents write their outputs (logs, results, metrics, drift) to BigQuery and use Terraform to provision and validate their sandboxed environments.\n

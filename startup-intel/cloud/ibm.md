@@ -1,4 +1,4 @@
-# IBM Hyper Protect
+# IBM Hyper Protect Provider
 
 ## Why IBM is Core
 IBM is your security + compliance + Black founder friendly backbone.
@@ -9,9 +9,9 @@ IBM is your security + compliance + Black founder friendly backbone.
 - Confidential workloads
 
 ## Startup Credits
-$10k → $120k (rep-based elevation)
+$10k -> $120k (rep-based elevation)
 
 ## What Goes Here
 - Sensitive agent workloads
 - Encrypted data pipelines
-- Compliance-driven tasks
+- Compliance-driven tasks\n
