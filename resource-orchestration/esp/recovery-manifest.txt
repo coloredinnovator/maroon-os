@@ -1,0 +1,20 @@
+# EMERGENCY RECOVERY MANIFEST
+
+If the automated kill-switch.sh fails or the cloud API layer is unreachable, immediately contact cloud provider support to request a manual account suspension.
+
+## Google Cloud Platform (GCP)
+- Billing Account ID: [INSERT_BILLING_ID_HERE]
+- Project ID: maroon-os-project
+- Support Portal: https://console.cloud.google.com/support
+
+## Amazon Web Services (AWS)
+- Account ID: [INSERT_ACCOUNT_ID_HERE]
+- Root Email: admin@maroontechnologies.com
+- Support Portal: https://console.aws.amazon.com/support/home
+
+## Microsoft Azure
+- Subscription ID: [INSERT_SUBSCRIPTION_ID_HERE]
+- Support Portal: https://portal.azure.com/#view/Microsoft_Azure_Support/HelpAndSupportBlade
+
+> [!WARNING]
+> DO NOT provide agents with access to this file. This must remain air-gapped or restricted to Founder access only.\n
